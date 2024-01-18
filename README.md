@@ -130,7 +130,7 @@ Harold is ecstatic that you were able to help him prove that the algorithmic tra
 For this section I used the Resources folder CSV files for: 
 -APPLE 
 -COSTCO 
--GOOGLE. 
+-GOOGLE
 
 NOTE: These were provided as a backup in the event that the Google Finance function is not functioning properly on my laptop.
 
@@ -139,32 +139,29 @@ NOTE: These were provided as a backup in the event that the Google Finance funct
 
 ### Calculate the Annualized Standard Deviation.
 
-daily_std = full_portfolio.std()
-annualized_std = daily_std * np.sqrt(252)
-annualized_std
-SOROS FUND MANAGEMENT LLC      0.146675
-PAULSON & CO.INC.              0.116732
-TIGER GLOBAL MANAGEMENT LLC    0.232531
-BERKSHIRE HATHAWAY INC         0.247155
-Algo 1                         0.133704
-Algo 2                         0.139556
-SP500                          0.152054
-kims_port                      0.211496
-dtype: float64
 
 Calculate and plot rolling std with a 21-day window.
 
+<img width="1005" alt="Screenshot 2024-01-17 at 10 38 36 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/b180be2e-9ac6-46ed-ae53-b61d30fe7647">
+
+
 Calculate and plot the correlation.
+
+<img width="988" alt="Screenshot 2024-01-17 at 10 35 39 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/44b52b60-93b2-4c77-b99e-ca0578c6f26b">
+
 
 Calculate and plot beta for your portfolio compared to the S&P 60 TSX.
 
+<img width="772" alt="Screenshot 2024-01-17 at 10 40 53 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/87c13a92-dd55-42e8-96df-77a7ee7492ae">
+
+
 Calculate the Sharpe ratios and generate a bar plot.
 
+<img width="760" alt="Screenshot 2024-01-17 at 10 41 09 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/d084a8be-c14f-43a3-a79b-3a1da6a6b3cb">
 
 
 # How does your portfolio do?
 My portfolio did great. My portfolio came in second right behind Algo 1. Also my porfolio did better than the SP500 as well.
-
 
 
 # Resources
