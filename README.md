@@ -67,9 +67,11 @@ Analyze the data to see if any of the portfolios outperform the stock market (i.
 <img width="1001" alt="Screenshot 2024-01-17 at 10 08 24 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/e3037571-8761-43a8-b500-2b820b525a2e">
 
 
-3. Calculate and plot cumulative returns for all portfolios. Does any portfolio outperform the S&P 500?
+2. Calculate and plot cumulative returns for all portfolios. Does any portfolio outperform the S&P 500?
    
 <img width="999" alt="Screenshot 2024-01-17 at 10 09 07 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/32b96c25-291a-4afa-8757-e94701f5d68c">
+
+## Algo 1 outperforms S&P 500.
 
 ## Risk Analysis
 
