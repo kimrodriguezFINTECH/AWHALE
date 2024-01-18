@@ -35,47 +35,20 @@ First, read and clean several CSV files for analysis. The CSV files include whal
 ### WHALES:
 <img width="264" alt="Screenshot 2024-01-17 at 8 51 46 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/941cb061-b51f-4e38-acae-ce543936a574">
 
-### ALGO 1 & 2:
-
-#### Count nulls
-algo.isnull().sum()
-Algo 1    0
-Algo 2    6
-dtype: int64
-
-#### Drop nulls
-clean_algo = algo.dropna()
-clean_algo.isnull().sum()
-Algo 1    0
-Algo 2    0
-dtype: int64
+### ALGO 1 & 2
+<img width="211" alt="Screenshot 2024-01-17 at 9 59 09 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/6970b009-3a8b-4298-bf42-0817126bdc80">
 
 ### SP500:
-#### Drop nulls
-clean_daily_returns = daily_returns.dropna()
-clean_daily_returns.isnull().sum()
+<img width="351" alt="Screenshot 2024-01-17 at 9 59 27 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/d019fe8c-9eea-4806-847b-c65e07ac56f0">
 
 3. If any columns have dollar signs or characters other than numeric values, remove those characters and convert the data types as needed.
 
-### Fix Data Types:
-
-sp500['Close'] = sp500['Close'].str.replace('$', '').str.replace(',', '').astype("float")
-sp500
-
-Date	    CLOSE
-2012-10-01	1444.49
-2012-10-02	1445.75
-2012-10-03	1450.99
-2012-10-04	1461.40
-2012-10-05	1460.93
-...	...
-2019-04-16	2907.06
-2019-04-17	2900.45
-2019-04-18	2905.03
-2019-04-22	2907.97
-2019-04-23	2933.68
+<img width="705" alt="Screenshot 2024-01-17 at 10 01 57 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/8b5b2b45-2ad4-47e4-bfee-551f515d9241">
 
 4. The whale portfolios and algorithmic portfolio CSV files contain daily returns, but the S&P 500 CSV file contains closing prices. Convert the S&P 500 closing prices to daily returns.
+   
+<img width="453" alt="Screenshot 2024-01-17 at 10 02 34 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/df8971a0-178c-4dee-81c2-c8601d4925c4">
+
 
 ### Calculate Daily Returns
 
