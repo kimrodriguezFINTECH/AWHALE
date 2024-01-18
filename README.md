@@ -32,13 +32,80 @@ First, read and clean several CSV files for analysis. The CSV files include whal
 
 2. Detect and remove null values.
 
+### WHALES:
+#### Count nulls
+whales.isnull().sum()
+SOROS FUND MANAGEMENT LLC      1
+PAULSON & CO.INC.              1
+TIGER GLOBAL MANAGEMENT LLC    1
+BERKSHIRE HATHAWAY INC         1
+dtype: int64
+
+#### Drop nulls
+clean_whales = whales.dropna()
+clean_whales.isnull().sum()
+SOROS FUND MANAGEMENT LLC      0
+PAULSON & CO.INC.              0
+TIGER GLOBAL MANAGEMENT LLC    0
+BERKSHIRE HATHAWAY INC         0
+dtype: int64
+
+### ALGO 1 & 2:
+#### Count nulls
+algo.isnull().sum()
+Algo 1    0
+Algo 2    6
+dtype: int64
+
+#### Drop nulls
+clean_algo = algo.dropna()
+clean_algo.isnull().sum()
+Algo 1    0
+Algo 2    0
+dtype: int64
+
+### SP500:
+#### Drop nulls
+clean_daily_returns = daily_returns.dropna()
+clean_daily_returns.isnull().sum()
 
 3. If any columns have dollar signs or characters other than numeric values, remove those characters and convert the data types as needed.
 
+### Fix Data Types:
+
+sp500['Close'] = sp500['Close'].str.replace('$', '').str.replace(',', '').astype("float")
+sp500
+
+Date	    CLOSE
+2012-10-01	1444.49
+2012-10-02	1445.75
+2012-10-03	1450.99
+2012-10-04	1461.40
+2012-10-05	1460.93
+...	...
+2019-04-16	2907.06
+2019-04-17	2900.45
+2019-04-18	2905.03
+2019-04-22	2907.97
+2019-04-23	2933.68
 
 4. The whale portfolios and algorithmic portfolio CSV files contain daily returns, but the S&P 500 CSV file contains closing prices. Convert the S&P 500 closing prices to daily returns.
 
+### Calculate Daily Returns
+
+1. One Way to Calculate Daily Returns
+daily_returns = (sp500 - sp500.shift(1)) / sp500.shift(1)
+daily_returns.head()
+
+2. Second Way to Calculate Daily Returns
+daily_returns = sp500.pct_change()
+daily_returns.head()
+
+
 5. Join `Whale Returns`, `Algorithmic Returns`, and the `S&P 500 Returns` into a single DataFrame with columns for each portfolio's returns.
+
+joined_data_columns = pd.concat([clean_whales, clean_algo, clean_daily_returns], axis="columns", join= "inner")
+joined_data_columns
 
 ## Conduct Quantitative Analysis
 
@@ -59,13 +126,42 @@ Analyze the data to see if any of the portfolios outperform the stock market (i.
 
 2. Calculate the standard deviation for each portfolio.
 
+daily_std_all_portfolios = joined_data_columns.std()
+daily_std_all_portfolios
+
+SOROS FUND MANAGEMENT LLC      0.007895
+PAULSON & CO.INC.              0.007023
+TIGER GLOBAL MANAGEMENT LLC    0.010894
+BERKSHIRE HATHAWAY INC         0.012919
+Algo 1                         0.007620
+Algo 2                         0.008342
+SP500                          0.008554
+dtype: float64
 
 3. Determine which portfolios are riskier than the S&P 500.
 
+daily_std_sp500 = daily_std_all_portfolios[6]
+daily_std_sp500
+riskier_than_sp500 = daily_std_all_portfolios[daily_std_all_portfolios > daily_std_sp500]
+riskier_than_sp500
+
+In this case we determined that these two portfolios are riskier than the S&P 500:
+TIGER GLOBAL MANAGEMENT LLC    0.010894
+BERKSHIRE HATHAWAY INC         0.012919
 
 4. Calculate the Annualized Standard Deviation.
 
+annualized_std = daily_std_all_portfolios * np.sqrt(252)
+annualized_std
 
+SOROS FUND MANAGEMENT LLC      0.125335
+PAULSON & CO.INC.              0.111488
+TIGER GLOBAL MANAGEMENT LLC    0.172936
+BERKSHIRE HATHAWAY INC         0.205077
+Algo 1                         0.120967
+Algo 2                         0.132430
+SP500                          0.135786
+dtype: float64
 
 ## Rolling Statistics
 
@@ -81,8 +177,6 @@ Rolling Statistics Challenge: Exponentially Weighted Average
 An alternative method to calculate a rolling window is to take the exponentially weighted moving average. This is like a moving window average, but it assigns greater importance to more recent observations. Try calculating the ewm with a 21-day half-life.
 
 ## Sharpe Ratios
-Investment managers and their institutional investors look at the return-to-risk ratio, not just the returns. After all, if you have two portfolios that each offer a 10% return, yet one is lower risk, you would invest in the lower-risk portfolio, right?
-
 
 Using the daily returns, calculate and visualize the Sharpe ratios using a bar plot.
 
@@ -102,12 +196,29 @@ For this section I used the Resources folder CSV files for:
 NOTE: These were provided as a backup in the event that the Google Finance function is not functioning properly on my laptop.
 
 
-Run the following analyses:
+## Run the following analyses:
 
-Calculate the Annualized Standard Deviation.
+### Calculate the Annualized Standard Deviation.
+
+daily_std = full_portfolio.std()
+annualized_std = daily_std * np.sqrt(252)
+annualized_std
+SOROS FUND MANAGEMENT LLC      0.146675
+PAULSON & CO.INC.              0.116732
+TIGER GLOBAL MANAGEMENT LLC    0.232531
+BERKSHIRE HATHAWAY INC         0.247155
+Algo 1                         0.133704
+Algo 2                         0.139556
+SP500                          0.152054
+kims_port                      0.211496
+dtype: float64
+
 Calculate and plot rolling std with a 21-day window.
+
 Calculate and plot the correlation.
+
 Calculate and plot beta for your portfolio compared to the S&P 60 TSX.
+
 Calculate the Sharpe ratios and generate a bar plot.
 
 
