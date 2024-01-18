@@ -182,7 +182,7 @@ Using the daily returns, calculate and visualize the Sharpe ratios using a bar p
 
 
 Determine whether the algorithmic strategies outperform both the market (S&P 500) and the whales portfolios.
-
+Algo 1 outperformed SP 500 and Whale Returns however, Algo 2 did not completely
 
 
 ## Create a Custom Portfolio
@@ -223,91 +223,84 @@ Calculate the Sharpe ratios and generate a bar plot.
 
 
 
-How does your portfolio do?
+# How does your portfolio do?
+My portfolio did great. My portfolio came in second right behind Algo 1. Also my porfolio did better than the SP500 as well.
+
+
 
 # Resources
 ## Prepare the Data
-Tutor Meetings through FINTECH Bootcamp: 
-Charles W.
--Monday 1/8/2024
--Tuesday 1/9/2024
--Monday 1/15/2024
+### Tutor Meetings through FINTECH Bootcamp: 
+#### Charles W.
+#### -Monday 1/8/2024
+#### -Tuesday 1/9/2024
+#### -Monday 1/15/2024
 
-Tutor Meetings External Resources:
-Website: https://www.edwardrees.info
-Edward R.
--Monday 1/8/2024
--Sunday 1/14/2024
+### Tutor Meetings External Resources:
+#### Website: https://www.edwardrees.info
+#### Edward R.
+#### -Monday 1/8/2024
+#### -Sunday 1/14/2024
 
-Python:
+### Python:
 https://www.python.org/about/gettingstarted/
 
 ## Conduct Quantitative Analysis
-Tutor Meetings through FINTECH Bootcamp: 
-Charles W.
--Monday 1/8/2024
--Tuesday 1/9/2024
--Monday 1/15/2024
+### Tutor Meetings through FINTECH Bootcamp: 
+#### Charles W.
+#### -Monday 1/8/2024
+#### -Tuesday 1/9/2024
+#### -Monday 1/15/2024
 
-Tutor Meetings External Resources:
-Website: https://www.edwardrees.info
-Edward R.
--Monday 1/8/2024
--Sunday 1/14/2024
-
-Python:
-https://www.python.org/about/gettingstarted/
-
+### Tutor Meetings External Resources:
+#### Website: https://www.edwardrees.info
+#### Edward R.
+#### -Monday 1/8/2024
+#### -Sunday 1/14/2024
 
 ## Sharpe Ratios
-Tutor Meetings through FINTECH Bootcamp: 
-Charles W.
--Monday 1/8/2024
--Tuesday 1/9/2024
--Monday 1/15/2024
+### Tutor Meetings through FINTECH Bootcamp: 
+#### Charles W.
+#### -Monday 1/8/2024
+#### -Tuesday 1/9/2024
+#### -Monday 1/15/2024
 
-Tutor Meetings External Resources:
-Website: https://www.edwardrees.info
-Edward R.
--Monday 1/8/2024
--Sunday 1/14/2024
+### Tutor Meetings External Resources:
+#### Website: https://www.edwardrees.info
+#### Edward R.
+#### -Monday 1/8/2024
+#### -Sunday 1/14/2024
 
-Python:
-https://www.python.org/about/gettingstarted/
-
-Study Partner taking FINTECH Bootcamp (Same Class):
-German Romero 
--Helped eachother fix code errors 
--Cross Referenced work to help eachother understand why we are using a specific code and understand what the question is asking us for 
+### Study Partner taking FINTECH Bootcamp (Same Class):
+#### German Romero 
+#### -Helped eachother fix code errors 
+#### -Cross Referenced work to help eachother understand why we are using a specific code and understand what the question is asking us for 
 
 ## Create Custom Portfolio
-Tutor Meetings through FINTECH Bootcamp: 
-Charles W.
--Monday 1/8/2024
--Tuesday 1/9/2024
--Monday 1/15/2024
+### Tutor Meetings through FINTECH Bootcamp: 
+#### Charles W.
+#### -Monday 1/8/2024
+#### -Tuesday 1/9/2024
+#### -Monday 1/15/2024
 
-Tutor Meetings External Resources:
-Website: https://www.edwardrees.info
-Edward R.
--Monday 1/8/2024
--Sunday 1/14/2024
+### Tutor Meetings External Resources:
+#### Website: https://www.edwardrees.info
+#### Edward R.
+#### -Monday 1/8/2024
+#### -Sunday 1/14/2024
 
-Python:
-https://www.python.org/about/gettingstarted/
-
-Study Partner taking FINTECH Bootcamp (Same Class):
-German Romero 
--Helped eachother fix code errors 
--Cross Referenced work to help eachother understand why we are using a specific code and understand what the question is asking us for 
+### Study Partner taking FINTECH Bootcamp (Same Class):
+#### German Romero 
+#### -Helped eachother fix code errors 
+#### -Cross Referenced work to help eachother understand why we are using a specific code and understand what the question is asking us for  
 
 ## Additional Resources:
-Python for Beginners
+### Python for Beginners
 https://www.python.org/about/gettingstarted/
 
-Pandas API Docs
+### Pandas API Docs
 https://pandas.pydata.org/pandas-docs/stable/reference/index.html
 
-Exponential weighted function in Pandas
+### Exponential weighted function in Pandas
 https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.ewm.html
 
