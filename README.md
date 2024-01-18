@@ -41,6 +41,7 @@ First, read and clean several CSV files for analysis. The CSV files include whal
 ### SP500:
 <img width="351" alt="Screenshot 2024-01-17 at 9 59 27 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/d019fe8c-9eea-4806-847b-c65e07ac56f0">
 
+
 3. If any columns have dollar signs or characters other than numeric values, remove those characters and convert the data types as needed.
 
 <img width="705" alt="Screenshot 2024-01-17 at 10 01 57 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/8b5b2b45-2ad4-47e4-bfee-551f515d9241">
@@ -48,17 +49,6 @@ First, read and clean several CSV files for analysis. The CSV files include whal
 4. The whale portfolios and algorithmic portfolio CSV files contain daily returns, but the S&P 500 CSV file contains closing prices. Convert the S&P 500 closing prices to daily returns.
    
 <img width="453" alt="Screenshot 2024-01-17 at 10 02 34 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/df8971a0-178c-4dee-81c2-c8601d4925c4">
-
-
-### Calculate Daily Returns
-
-1. One Way to Calculate Daily Returns
-daily_returns = (sp500 - sp500.shift(1)) / sp500.shift(1)
-daily_returns.head()
-
-2. Second Way to Calculate Daily Returns
-daily_returns = sp500.pct_change()
-daily_returns.head()
 
 
 5. Join `Whale Returns`, `Algorithmic Returns`, and the `S&P 500 Returns` into a single DataFrame with columns for each portfolio's returns.
