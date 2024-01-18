@@ -75,67 +75,53 @@ Analyze the data to see if any of the portfolios outperform the stock market (i.
 
 
 1. Create a box plot for each of the returns.
+   
+<img width="817" alt="Screenshot 2024-01-17 at 10 20 37 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/4c5587dc-bbee-4dbc-a7b5-28b039ebaa45">
 
 
 2. Calculate the standard deviation for each portfolio.
 
-daily_std_all_portfolios = joined_data_columns.std()
-daily_std_all_portfolios
+<img width="472" alt="Screenshot 2024-01-17 at 10 21 08 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/e53ef2f9-aad0-4d87-9d98-caa23e80a911">
 
-SOROS FUND MANAGEMENT LLC      0.007895
-PAULSON & CO.INC.              0.007023
-TIGER GLOBAL MANAGEMENT LLC    0.010894
-BERKSHIRE HATHAWAY INC         0.012919
-Algo 1                         0.007620
-Algo 2                         0.008342
-SP500                          0.008554
-dtype: float64
 
 3. Determine which portfolios are riskier than the S&P 500.
 
-daily_std_sp500 = daily_std_all_portfolios[6]
-daily_std_sp500
-riskier_than_sp500 = daily_std_all_portfolios[daily_std_all_portfolios > daily_std_sp500]
-riskier_than_sp500
+<img width="701" alt="Screenshot 2024-01-17 at 10 15 12 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/4b21721e-cd3b-4bd7-a7d7-df8dd50fc662">
 
-In this case we determined that these two portfolios are riskier than the S&P 500:
-TIGER GLOBAL MANAGEMENT LLC    0.010894
-BERKSHIRE HATHAWAY INC         0.012919
 
 4. Calculate the Annualized Standard Deviation.
 
-annualized_std = daily_std_all_portfolios * np.sqrt(252)
-annualized_std
-
-SOROS FUND MANAGEMENT LLC      0.125335
-PAULSON & CO.INC.              0.111488
-TIGER GLOBAL MANAGEMENT LLC    0.172936
-BERKSHIRE HATHAWAY INC         0.205077
-Algo 1                         0.120967
-Algo 2                         0.132430
-SP500                          0.135786
-dtype: float64
+<img width="511" alt="Screenshot 2024-01-17 at 10 21 17 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/c64b8c93-7454-4d0e-b16c-d4fe87b18e71">
 
 ## Rolling Statistics
 
 
 1. Calculate and plot the rolling standard deviation for all portfolios using a 21-day window.
 
+<img width="1074" alt="Screenshot 2024-01-17 at 10 26 53 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/2d5fea12-2cc2-4535-abf1-5169b1dc3566">
+
 
 2. Calculate and plot the correlation between each stock to determine which portfolios may mimick the S&P 500.
+
+<img width="587" alt="Screenshot 2024-01-17 at 10 28 51 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/91b67458-b60d-4930-982f-2e66fa1748ca">
 
 
 3. Choose one portfolio, then calculate and plot the 60-day rolling beta between it and the S&P 500.
 Rolling Statistics Challenge: Exponentially Weighted Average
 An alternative method to calculate a rolling window is to take the exponentially weighted moving average. This is like a moving window average, but it assigns greater importance to more recent observations. Try calculating the ewm with a 21-day half-life.
 
+<img width="758" alt="Screenshot 2024-01-17 at 10 30 04 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/a926870a-53d8-4cfb-8a28-831186c8c23b">
+
+
 ## Sharpe Ratios
 
 Using the daily returns, calculate and visualize the Sharpe ratios using a bar plot.
 
+<img width="758" alt="Screenshot 2024-01-17 at 10 32 07 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/ece75659-9136-48bc-a1c0-4fe786d68381">
+
 
 Determine whether the algorithmic strategies outperform both the market (S&P 500) and the whales portfolios.
-Algo 1 outperformed SP 500 and Whale Returns however, Algo 2 did not completely
+- Algo 1 outperformed SP 500 and Whale Returns however, Algo 2 did not completely
 
 
 ## Create a Custom Portfolio
