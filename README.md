@@ -115,12 +115,12 @@ An alternative method to calculate a rolling window is to take the exponentially
 
 ## Sharpe Ratios
 
-Using the daily returns, calculate and visualize the Sharpe ratios using a bar plot.
+1. Using the daily returns, calculate and visualize the Sharpe ratios using a bar plot.
 
 <img width="758" alt="Screenshot 2024-01-17 at 10 32 07 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/ece75659-9136-48bc-a1c0-4fe786d68381">
 
 
-Determine whether the algorithmic strategies outperform both the market (S&P 500) and the whales portfolios.
+2. Determine whether the algorithmic strategies outperform both the market (S&P 500) and the whales portfolios.
 - Algo 1 outperformed SP 500 and Whale Returns however, Algo 2 did not completely
 
 
@@ -140,28 +140,28 @@ NOTE: These were provided as a backup in the event that the Google Finance funct
 ### Calculate the Annualized Standard Deviation.
 
 
-Calculate and plot rolling std with a 21-day window.
+1. Calculate and plot rolling std with a 21-day window.
 
 <img width="1005" alt="Screenshot 2024-01-17 at 10 38 36 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/b180be2e-9ac6-46ed-ae53-b61d30fe7647">
 
 
-Calculate and plot the correlation.
+2. Calculate and plot the correlation.
 
 <img width="988" alt="Screenshot 2024-01-17 at 10 35 39 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/44b52b60-93b2-4c77-b99e-ca0578c6f26b">
 
 
-Calculate and plot beta for your portfolio compared to the S&P 60 TSX.
+3. Calculate and plot beta for your portfolio compared to the S&P 60 TSX.
 
 <img width="772" alt="Screenshot 2024-01-17 at 10 40 53 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/87c13a92-dd55-42e8-96df-77a7ee7492ae">
 
 
-Calculate the Sharpe ratios and generate a bar plot.
+4. Calculate the Sharpe ratios and generate a bar plot.
 
 <img width="760" alt="Screenshot 2024-01-17 at 10 41 09 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/d084a8be-c14f-43a3-a79b-3a1da6a6b3cb">
 
 
 # How does your portfolio do?
-My portfolio did great. My portfolio came in second right behind Algo 1. Also my porfolio did better than the SP500 as well.
+## Conclusion: My portfolio did great. My portfolio came in second right behind Algo 1. Also my porfolio did better than the SP500 as well.
 
 
 # Resources
