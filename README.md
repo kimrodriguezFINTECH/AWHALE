@@ -33,24 +33,10 @@ First, read and clean several CSV files for analysis. The CSV files include whal
 2. Detect and remove null values.
 
 ### WHALES:
-#### Count nulls
-whales.isnull().sum()
-SOROS FUND MANAGEMENT LLC      1
-PAULSON & CO.INC.              1
-TIGER GLOBAL MANAGEMENT LLC    1
-BERKSHIRE HATHAWAY INC         1
-dtype: int64
-
-#### Drop nulls
-clean_whales = whales.dropna()
-clean_whales.isnull().sum()
-SOROS FUND MANAGEMENT LLC      0
-PAULSON & CO.INC.              0
-TIGER GLOBAL MANAGEMENT LLC    0
-BERKSHIRE HATHAWAY INC         0
-dtype: int64
+<img width="264" alt="Screenshot 2024-01-17 at 8 51 46 PM" src="https://github.com/kimrodriguezFINTECH/AWHALE/assets/152752672/941cb061-b51f-4e38-acae-ce543936a574">
 
 ### ALGO 1 & 2:
+
 #### Count nulls
 algo.isnull().sum()
 Algo 1    0
