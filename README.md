@@ -226,9 +226,88 @@ Calculate the Sharpe ratios and generate a bar plot.
 How does your portfolio do?
 
 # Resources
+## Prepare the Data
+Tutor Meetings through FINTECH Bootcamp: 
+Charles W.
+-Monday 1/8/2024
+-Tuesday 1/9/2024
+-Monday 1/15/2024
+
+Tutor Meetings External Resources:
+Website: https://www.edwardrees.info
+Edward R.
+-Monday 1/8/2024
+-Sunday 1/14/2024
+
+Python:
+https://www.python.org/about/gettingstarted/
+
+## Conduct Quantitative Analysis
+Tutor Meetings through FINTECH Bootcamp: 
+Charles W.
+-Monday 1/8/2024
+-Tuesday 1/9/2024
+-Monday 1/15/2024
+
+Tutor Meetings External Resources:
+Website: https://www.edwardrees.info
+Edward R.
+-Monday 1/8/2024
+-Sunday 1/14/2024
+
+Python:
+https://www.python.org/about/gettingstarted/
+
+
+## Sharpe Ratios
+Tutor Meetings through FINTECH Bootcamp: 
+Charles W.
+-Monday 1/8/2024
+-Tuesday 1/9/2024
+-Monday 1/15/2024
+
+Tutor Meetings External Resources:
+Website: https://www.edwardrees.info
+Edward R.
+-Monday 1/8/2024
+-Sunday 1/14/2024
+
+Python:
+https://www.python.org/about/gettingstarted/
+
+Study Partner taking FINTECH Bootcamp (Same Class):
+German Romero 
+-Helped eachother fix code errors 
+-Cross Referenced work to help eachother understand why we are using a specific code and understand what the question is asking us for 
+
+## Create Custom Portfolio
+Tutor Meetings through FINTECH Bootcamp: 
+Charles W.
+-Monday 1/8/2024
+-Tuesday 1/9/2024
+-Monday 1/15/2024
+
+Tutor Meetings External Resources:
+Website: https://www.edwardrees.info
+Edward R.
+-Monday 1/8/2024
+-Sunday 1/14/2024
+
+Python:
+https://www.python.org/about/gettingstarted/
+
+Study Partner taking FINTECH Bootcamp (Same Class):
+German Romero 
+-Helped eachother fix code errors 
+-Cross Referenced work to help eachother understand why we are using a specific code and understand what the question is asking us for 
+
+## Additional Resources:
+Python for Beginners
+https://www.python.org/about/gettingstarted/
 
 Pandas API Docs
+https://pandas.pydata.org/pandas-docs/stable/reference/index.html
 
 Exponential weighted function in Pandas
+https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.ewm.html
 
-Supplemental Guide: Fetching Stock Data Using Google Sheets
