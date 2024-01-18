@@ -16,9 +16,9 @@ You need to create a tool (an analysis notebook) that analyzes and visualizes th
 
 ---
 
-### Instructions
+# Instructions
 
-## 1. Prepare the Data
+## Prepare the Data
 
 First, read and clean several CSV files for analysis. The CSV files include whale portfolio returns, algorithmic trading portfolio returns, and S&P 500 historical prices and complete the following steps:
 
@@ -40,7 +40,7 @@ First, read and clean several CSV files for analysis. The CSV files include whal
 
 5. Join `Whale Returns`, `Algorithmic Returns`, and the `S&P 500 Returns` into a single DataFrame with columns for each portfolio's returns.
 
-### 2. Conduct Quantitative Analysis
+## Conduct Quantitative Analysis
 
 Analyze the data to see if any of the portfolios outperform the stock market (i.e., the S&P 500).
 
